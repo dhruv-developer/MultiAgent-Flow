@@ -32,7 +32,7 @@ import random
 from datetime import datetime, timedelta
 
 # Replace with os.getenv("GROQ_API_KEY") for production
-client = Groq(api_key="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")
+client = Groq(api_key=os.getenv("GROQ_API_KEY"))
 
 class TicketBookingAgent:
     def __init__(self):
